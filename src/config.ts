@@ -1,14 +1,14 @@
 import { BotConfig } from './structures/types'; 
 
 export const config: BotConfig = {
-    groupId: 0,
+    groupId: 9697831,
     slashCommands: true,
     legacyCommands: {
-        enabled: true,
+        enabled: false,
         prefixes: ['q!'],
     },
     permissions: {
-        all: [''],
+        all: ['921905411853017142'],
         ranking: [''],
         users: [''],
         shout: [''],
@@ -17,49 +17,61 @@ export const config: BotConfig = {
         admin: [''],
     },
     logChannels: {
-        actions: '',
-        shout: '',
+        actions: '934745724988571658',
+        shout: '934745724988571658',
     },
     database: {
-        enabled: false,
+        enabled: true,
         type: 'mongodb',
     },
-    api: false,
+    api: true,
     maximumRank: 255,
     verificationChecks: true,
     firedRank: 1,
-    suspendedRank: 1,
+    suspendedRank: 3,
     recordManualActions: true,
     memberCount: {
         enabled: false,
-        channelId: '',
-        milestone: 100,
+        channelId: '963359399458525184',
+        milestone: 300,
         onlyMilestones: false,
     },
     xpSystem: {
-        enabled: false,
-        autoRankup: false,
+        enabled: true,
+        autoRankup: true,
         roles: [
-            /* Example:
-            {
-                rank: 3,
-                xp: 30,
+          {
+                rank: 5,
+                xp: 60,
             },
-            */
+              {
+                rank: 6,
+                xp: 150,
+            },
+              {
+                rank: 7,
+                xp: 250,
+            },
+            {
+                rank: 8,
+                xp: 320,
+            },
+      
         ],
     },
     antiAbuse: {
-        enabled: false,
+        enabled: true,
         clearDuration: 1 * 60,
         threshold: 5,
         demotionRank: 1,
         bypassRoleId: '',
     },
     activity: {
-        enabled: false,
-        type: 'WATCHING',
-        value: 'for commands.',
+        enabled: true,
+        type: 'PLAYING',
+        value: 'The Gold Cafe Ranking | /help',
     },
     status: 'online',
-    deleteWallURLs: false,
+    deleteWallURLs: true,
 }
+
